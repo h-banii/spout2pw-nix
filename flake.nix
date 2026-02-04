@@ -1,4 +1,6 @@
 {
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
   description = "flake with spout2pw related packages";
 
   outputs =
