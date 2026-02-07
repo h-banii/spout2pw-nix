@@ -7,16 +7,16 @@
   vulkan-loader,
   libgbm,
   libdrm,
-pkg-config,
-  wineWowPackages
+  pkg-config,
+  wineWowPackages,
 }:
 stdenv.mkDerivation {
   pname = "spout2pw-bin";
   version = "0.1.4";
 
   src = fetchzip {
-    url = "https://github.com/hoshinolina/spout2pw/releases/download/0.1.4/spout2pw-0.1.4-bin.tar.gz";
-    hash = "sha256-ovZBw2IhNt7qDqqNH3uSGlLkr8V2040rcVgh7P1+MmQ=";
+    url = "https://github.com/hoshinolina/spout2pw/releases/download/0.1.5/spout2pw-0.1.5-bin.tar.gz";
+    hash = "sha256-IxR3gs9EhtZ3X/r9FexfQtKiKY9xXb9UWS4fLh+wEkw=";
   };
 
   dontPatchShebangs = true;
