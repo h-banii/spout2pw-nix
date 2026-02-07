@@ -48,7 +48,7 @@ stdenv.mkDerivation {
     substituteInPlace $out/bin/spout2pw \
       --replace /bin/bash '/usr/bin/env bash' \
       --replace 'gbm_steamrt_workaround() {' $'gbm_steamrt_workaround() {\nreturn' \
-      --replace 'gbm_backend_paths="' 'gbm_backend_paths="/run/opengl-driver/lib/gbm'
+      --replace 'gbm_backend_paths="' 'gbm_backend_paths="/run/opengl-driver/lib'
   '';
 
   meta = {
